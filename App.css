@@ -1,0 +1,386 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+/* body{
+  position: absolute;
+} */
+#main {
+  background-color: black;
+  overflow: hidden;
+}
+h3 {
+  color: white;
+  font-family: "Times New Roman", Times, serif;
+}
+
+#home {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  border-bottom: 5px solid rgb(59, 53, 53);
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 30px;
+  color: white;
+}
+
+nav ul {
+  display: flex;
+  margin-bottom: 0;
+}
+nav ul li {
+  list-style: none;
+  margin-right: 30px;
+  cursor: pointer;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+nav ul li:hover {
+  color: orange;
+}
+
+.tog {
+  display: none;
+}
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+
+  /* justify-content: space-between; */
+  padding: 0 50px;
+}
+.container-left {
+  width: 50%;
+  text-align: center;
+  padding: 70px 50px;
+}
+.textarea {
+  margin-top: 150px;
+}
+.container-left h1 {
+  font-size: 4.5rem;
+
+  background: -webkit-linear-gradient(#e1d748, #cf0bd6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+  color: white;
+  font-weight: 900;
+}
+.container-left p {
+  font-size: 2rem;
+  color: white;
+  font-family:cursive;
+}
+.container-right {
+  width: 40%;
+}
+.container-right img {
+  width: 100%;
+  height: 100%;
+}
+
+.About {
+  height: 100%;
+  border-bottom: 5px solid rgb(59, 53, 53);
+}
+.About.content {
+  padding: 20px 50px;
+  justify-content: space-between;
+}
+.content-left {
+  width: 30%;
+  height: 100%;
+}
+.content-left img {
+  height: 80%;
+  width: 100%;
+  border-radius: 20px;
+  border: 2px solid gold;
+}
+.content-right {
+  width: 68%;
+  height: 100%;
+  position: relative;
+}
+.text h3 {
+  background: -webkit-linear-gradient(#00fff7, #f70481);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 35px;
+}
+.text p {
+  color: white;
+}
+
+.details {
+  width: 77%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+  border: 1px solid cyan;
+  border-radius: 10px;
+  box-shadow: 4px 4px 6px rgb(10, 212, 212);
+}
+
+.details p {
+  min-width: 260px;
+}
+
+.skill {
+  height: 100%;
+  border-bottom: 5px solid rgb(59, 53, 53);
+}
+.skill.content {
+  flex-direction: column;
+  padding: 30px 50px;
+}
+.skill.content h3 {
+  background: -webkit-linear-gradient(#00fff7, #f70481);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 35px;
+  text-align: center;
+}
+.card-container {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 30px;
+}
+.card {
+  height: 300px;
+  width: 250px;
+  border: 1px solid cyan;
+
+  border-radius: 20px;
+  background: transparent;
+  padding: 25px;
+  box-shadow: 4px 4px 6px rgb(10, 212, 212);
+  overflow: hidden;
+  cursor: pointer;
+  color: white;
+}
+.card:hover {
+  scale: 1.1;
+  transition: 500ms;
+}
+.card p {
+  font-size: small;
+}
+.icon {
+  color: rgb(179, 56, 56);
+  font-size: 55px;
+}
+.contact {
+  border-bottom: 5px solid rgb(59, 53, 53);
+}
+.contact.content {
+  padding: 30px 50px;
+}
+
+.contact-left {
+  width: 40%;
+  padding: 10px;
+}
+
+.contact-right {
+  width: 60%;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+input {
+  background-color: rgb(32, 29, 29);
+  height: 40px;
+  width: 70%;
+  margin-bottom: 30px;
+  margin: 0px auto 20px auto;
+  border-radius: 10px;
+  border: none;
+  color: white;
+  padding-left: 15px;
+}
+
+textarea {
+  background-color: rgb(32, 29, 29);
+  width: 70%;
+  height: 130px;
+  margin-bottom: 20px;
+  margin: 0px auto;
+  border-radius: 10px;
+  border: none;
+  color: white;
+  padding-left: 15px;
+}
+.contact-way {
+  display: flex;
+
+  color: white;
+}
+.contact-way i {
+  margin-right: 15px;
+  cursor: pointer;
+  font-size: 25px;
+}
+.contact-way i:hover {
+  color: cyan;
+}
+.btn {
+  height: 40px;
+
+  color: white;
+  background-color: red;
+  border-radius: 7px;
+  width: 100px;
+  margin: 15px auto;
+}
+
+@media only screen and (max-width: 700px) {
+  #main {
+    width: 100%;
+    /* max-width: 600px; */
+    overflow: hidden;
+  }
+  #home {
+    width: 100%;
+    /* max-width: 600px; */
+    overflow: hidden;
+  }
+
+  nav ul {
+    display: block;
+    position: fixed;
+
+    top: 57px;
+    padding: 20px;
+    background-image: linear-gradient(#e1d748, #cf0bd6);
+  }
+  .show {
+    right: 0;
+    transition-duration: 1000ms;
+  }
+  .hide {
+    right: -200px;
+  }
+
+  .tog {
+    display: block;
+  }
+  nav ul li {
+    margin: 30px;
+  }
+
+  .content {
+    flex-direction: column;
+    align-content: center;
+    padding: 0;
+  }
+  .container-left {
+    width: 100%;
+    padding: 0;
+  }
+  .container-right {
+    width: 100%;
+  }
+  .container-right img {
+    width: 100%;
+    /* text-align: center; */
+  }
+  .textarea {
+    margin-top: 40px;
+  }
+
+  .About.content {
+    padding: 20px 10px;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .content-left {
+    width: 70%;
+    height: 100%;
+    border: 1px solid;
+  }
+  .content-right {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    /* border: 1px solid red; */
+  }
+  .text h3 {
+    text-align: center;
+  }
+  .details {
+    width: 100%;
+  }
+  .skill.content {
+    flex-direction: column;
+    padding: 10px;
+  }
+  .skill.content h3 {
+    color: white;
+    text-align: center;
+  }
+  .card-container {
+    flex-direction: column;
+    align-items: center;
+    margin: 10px auto;
+    width: 100%;
+    border: 1px solid orangered;
+  }
+  .card {
+    margin: 25px auto;
+
+    padding: 10px 15px;
+    text-align: center;
+  }
+  .card p {
+    text-align: left;
+  }
+
+  .contact.content {
+    padding: 10px;
+  }
+  .contact-left {
+    width: 100%;
+    border: 2px solid;
+    padding: 10px;
+    text-align: center;
+  }
+  .contact-right {
+    width: 100%;
+    border: 2px solid;
+  }
+  input {
+    width: 100%;
+  }
+  textarea {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 701px) and (max-width: 950px) {
+  .content {
+    padding: 10px;
+  }
+  .container-left {
+    padding: 0;
+  }
+  .skill.content {
+    padding: 10px;
+  }
+  .card {
+    width: 217px;
+  }
+  .cantact.content {
+    padding: 10px;
+  }
+}
